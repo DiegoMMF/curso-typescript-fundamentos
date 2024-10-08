@@ -1,6 +1,13 @@
 (async ()=> {
-  const myCart = [];
-  const products = [];
+  const myCart: any[] = [];
+  interface Product {
+    // Define las propiedades necesarias para Product
+    id: number;
+    name: string;
+    price: number;
+    // Agrega otras propiedades según sea necesario
+  }
+  const products: Product[] = [];
   const limit = 2;
 
   async function getProducts() {
